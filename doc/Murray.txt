@@ -1,0 +1,51 @@
+Murray - Robotron Game controller for Atari 5200
+
+Features:
+- SNES controller compatible
+- Full keyboard 
+
+Pinout required
+
+SNES Controller  (3)
+ LATCH
+ CLOCK
+ DATA 
+
+ATARI 5200 Controller 1 (11)
+ POT-X1
+ HALF-X1
+ POT-Y1
+ HALF-Y1
+ TOP
+ BOTTOM
+ 
+ I-MUX-A
+ I-MUX-B
+ O-MUX-A
+ O-MUX-B
+ MUX-ENABLE
+
+ATARI 5200 Controller 2 (4)
+ POT-X2
+ HALF-X2
+ POT-Y2
+ HALF-Y2
+
+Total of pins: 18 pins
+
+
+SNES Button  Function    1st Alternate 2nd Alternate
+Up           move  Up        Key 2         
+Down         move  Down      Key 7         
+Left         move  Left      Key 1         
+Right        move  Right     Key 3         
+X            fire  Up        Key 5         
+B            fire  Down      Key 8        Pause 
+Y            fire  Left      Key 4        Start 
+A            fire  Right     key 6        Reset 
+L            Top fire        key 9        * (asterisk) 
+R            Bottom fire     key 0        # (hash)
+Start        Start           2nd Alt       
+Select       1st Alternate 
+
+First concept is 
