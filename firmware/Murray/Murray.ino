@@ -108,6 +108,8 @@
 
 #include "MurrayPinout.h"
 
+//#define SUPPORT_NES_CLONES
+
 enum stickOrientation {
   _CENTER = 0,
   _NORTH,
@@ -247,9 +249,14 @@ void loop() {
 
     case _NES:
       mapNESbuttons();
+      break;
 
     default:
+#if defined (SUPPORT_NES_CLONES)
+      mapNESbuttons();
+#else    
       setIdleState();
+#endif      
   }
   activateOutputs();
   delay(20);
